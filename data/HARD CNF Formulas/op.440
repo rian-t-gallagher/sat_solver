@@ -1,0 +1,1001 @@
+
+ file is 100.430.883642754.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       103 |     440     1320 |     160     103      688     6.7 |  0.010 % |
+|       253 |     433     1296 |     176     103      599     5.8 |  1.023 % |
+==============================================================================
+restarts              : 3
+conflicts             : 354            (88500 /sec)
+decisions             : 425            (106250 /sec)
+propagations          : 8399           (2099750 /sec)
+conflict literals     : 1963           (23.68 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.004 s
+
+SATISFIABLE
+
+ file is 100.440.740896193.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       100 |     440     1320 |     160     100      729     7.3 |  0.010 % |
+|       251 |     442     1320 |     176     165     1012     6.1 |  0.031 % |
+==============================================================================
+restarts              : 3
+conflicts             : 469            (117250 /sec)
+decisions             : 575            (143750 /sec)
+propagations          : 11454          (2863500 /sec)
+conflict literals     : 2626           (20.06 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.004 s
+
+UNSATISFIABLE
+
+ file is 100.440.1176126774.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       100 |     440     1320 |     160     100      719     7.2 |  0.010 % |
+|       250 |     442     1320 |     176     163      977     6.0 |  0.030 % |
+|       475 |     423     1266 |     194      90      521     5.8 |  2.011 % |
+==============================================================================
+restarts              : 4
+conflicts             : 516            (64500 /sec)
+decisions             : 620            (77500 /sec)
+propagations          : 12310          (1538750 /sec)
+conflict literals     : 3076           (22.66 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.008 s
+
+UNSATISFIABLE
+
+ file is 100.440.1218687394.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       102 |     440     1320 |     160     102      715     7.0 |  0.010 % |
+|       253 |     432     1296 |     176      69      454     6.6 |  1.010 % |
+==============================================================================
+restarts              : 3
+conflicts             : 469            (117250 /sec)
+decisions             : 566            (141500 /sec)
+propagations          : 11117          (2779250 /sec)
+conflict literals     : 2607           (26.77 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.004 s
+
+UNSATISFIABLE
+
+ file is 100.440.142925087.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+==============================================================================
+restarts              : 1
+conflicts             : 98             (inf /sec)
+decisions             : 123            (inf /sec)
+propagations          : 2404           (inf /sec)
+conflict literals     : 691            (16.14 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0 s
+
+SATISFIABLE
+
+ file is 100.440.733279005.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       100 |     441     1320 |     160      99      644     6.5 |  0.021 % |
+|       250 |     446     1320 |     176     159      969     6.1 |  0.100 % |
+==============================================================================
+restarts              : 3
+conflicts             : 389            (48625 /sec)
+decisions             : 465            (58125 /sec)
+propagations          : 9840           (1230000 /sec)
+conflict literals     : 2163           (27.15 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.008 s
+
+UNSATISFIABLE
+
+ file is 100.440.176071722.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       102 |     440     1320 |     160     102      937     9.2 |  0.010 % |
+|       252 |     441     1320 |     176     166     1231     7.4 |  0.010 % |
+|       477 |     429     1284 |     194      51      334     6.5 |  1.010 % |
+|       815 |     423     1260 |     213     193     1176     6.1 |  2.020 % |
+==============================================================================
+restarts              : 5
+conflicts             : 913            (114125 /sec)
+decisions             : 1090           (136250 /sec)
+propagations          : 21261          (2657625 /sec)
+conflict literals     : 5787           (20.40 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.008 s
+
+SATISFIABLE
+
+ file is 100.440.145777343.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       100 |     440     1320 |     160     100      845     8.4 |  0.010 % |
+|       250 |     440     1320 |     176     166     1142     6.9 |  0.010 % |
+==============================================================================
+restarts              : 3
+conflicts             : 433            (54125 /sec)
+decisions             : 503            (62875 /sec)
+propagations          : 10641          (1330125 /sec)
+conflict literals     : 2763           (20.17 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.008 s
+
+UNSATISFIABLE
+
+ file is 100.440.1114956439.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       100 |     440     1320 |     160     100      676     6.8 |  0.010 % |
+|       250 |     428     1284 |     176      75      527     7.0 |  1.010 % |
+|       475 |     409     1224 |     194     111      738     6.6 |  3.010 % |
+==============================================================================
+restarts              : 4
+conflicts             : 527            (131750 /sec)
+decisions             : 653            (163250 /sec)
+propagations          : 11751          (2937750 /sec)
+conflict literals     : 3070           (21.62 % deleted)
+Memory used           : 1.68 MB
+CPU time              : 0.004 s
+
+UNSATISFIABLE
+
+ file is 100.440.788131367.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       102 |     440     1320 |     160     102      676     6.6 |  0.010 % |
+|       252 |     432     1290 |     176     110      649     5.9 |  1.020 % |
+==============================================================================
+restarts              : 3
+conflicts             : 362            (90500 /sec)
+decisions             : 424            (106000 /sec)
+propagations          : 7542           (1885500 /sec)
+conflict literals     : 1911           (20.80 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.004 s
+
+UNSATISFIABLE
+
+ file is 100.440.810950830.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       102 |     441     1320 |     160     101      666     6.6 |  0.020 % |
+|       253 |     444     1320 |     176     165     1020     6.2 |  0.081 % |
+|       478 |     447     1293 |     194     176      996     5.7 |  3.000 % |
+==============================================================================
+restarts              : 4
+conflicts             : 498            (62250 /sec)
+decisions             : 580            (72500 /sec)
+propagations          : 10885          (1360625 /sec)
+conflict literals     : 2922           (23.35 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.008 s
+
+UNSATISFIABLE
+
+ file is 100.440.789166541.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       100 |     440     1320 |     160     100      712     7.1 |  0.010 % |
+|       253 |     441     1320 |     176      89      544     6.1 |  0.020 % |
+==============================================================================
+restarts              : 3
+conflicts             : 461            (115250 /sec)
+decisions             : 531            (132750 /sec)
+propagations          : 10804          (2701000 /sec)
+conflict literals     : 2662           (24.25 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.004 s
+
+UNSATISFIABLE
+
+ file is 100.440.971561465.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       101 |     440     1320 |     160     101      642     6.4 |  0.011 % |
+|       254 |     446     1320 |     176     164      968     5.9 |  1.000 % |
+==============================================================================
+restarts              : 3
+conflicts             : 361            (90250 /sec)
+decisions             : 421            (105250 /sec)
+propagations          : 8041           (2010250 /sec)
+conflict literals     : 1953           (20.32 % deleted)
+Memory used           : 1.68 MB
+CPU time              : 0.004 s
+
+UNSATISFIABLE
+
+ file is 100.440.365145208.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       100 |     440     1320 |     160     100      801     8.0 |  0.010 % |
+|       251 |     429     1287 |     176      81      521     6.4 |  1.011 % |
+==============================================================================
+restarts              : 3
+conflicts             : 380            (95000 /sec)
+decisions             : 455            (113750 /sec)
+propagations          : 8483           (2120750 /sec)
+conflict literals     : 2271           (22.17 % deleted)
+Memory used           : 1.68 MB
+CPU time              : 0.004 s
+
+UNSATISFIABLE
+
+ file is 100.440.640374730.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       101 |     440     1320 |     160     101      787     7.8 |  0.010 % |
+|       251 |     443     1320 |     176     167      974     5.8 |  0.050 % |
+|       477 |     424     1251 |     194     126      689     5.5 |  3.050 % |
+==============================================================================
+restarts              : 4
+conflicts             : 496            (124000 /sec)
+decisions             : 582            (145500 /sec)
+propagations          : 11830          (2957500 /sec)
+conflict literals     : 2805           (21.07 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.004 s
+
+UNSATISFIABLE
+
+ file is 100.440.1172890912.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       100 |     432     1296 |     160      36      206     5.7 |  1.010 % |
+|       250 |     428     1269 |     176     116      658     5.7 |  3.020 % |
+==============================================================================
+restarts              : 3
+conflicts             : 284            (inf /sec)
+decisions             : 338            (inf /sec)
+propagations          : 6348           (inf /sec)
+conflict literals     : 1371           (27.80 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0 s
+
+UNSATISFIABLE
+
+ file is 100.440.1306976744.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       100 |     441     1320 |     160      99      685     6.9 |  0.010 % |
+|       250 |     443     1299 |     176      92      518     5.6 |  3.000 % |
+==============================================================================
+restarts              : 3
+conflicts             : 289            (inf /sec)
+decisions             : 357            (inf /sec)
+propagations          : 6749           (inf /sec)
+conflict literals     : 1518           (21.67 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0 s
+
+UNSATISFIABLE
+
+ file is 100.440.1369153400.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       100 |     440     1320 |     160     100      821     8.2 |  0.010 % |
+|       250 |     440     1320 |     176     167     1252     7.5 |  0.010 % |
+|       477 |     418     1254 |     194      99      605     6.1 |  3.021 % |
+==============================================================================
+restarts              : 4
+conflicts             : 547            (68375 /sec)
+decisions             : 675            (84375 /sec)
+propagations          : 12242          (1530250 /sec)
+conflict literals     : 3413           (19.64 % deleted)
+Memory used           : 1.68 MB
+CPU time              : 0.008 s
+
+UNSATISFIABLE
+
+ file is 100.440.1336653464.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       101 |     440     1320 |     160     101      704     7.0 |  0.010 % |
+|       252 |     443     1320 |     176     168     1039     6.2 |  0.061 % |
+==============================================================================
+restarts              : 3
+conflicts             : 362            (90500 /sec)
+decisions             : 424            (106000 /sec)
+propagations          : 8860           (2215000 /sec)
+conflict literals     : 2354           (23.55 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.004 s
+
+SATISFIABLE
+
+ file is 100.440.319437359.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       101 |     440     1320 |     160     101      740     7.3 |  0.010 % |
+==============================================================================
+restarts              : 2
+conflicts             : 224            (inf /sec)
+decisions             : 286            (inf /sec)
+propagations          : 5539           (inf /sec)
+conflict literals     : 1564           (18.50 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0 s
+
+SATISFIABLE
+
+ file is 100.440.547408509.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+==============================================================================
+restarts              : 1
+conflicts             : 76             (inf /sec)
+decisions             : 112            (inf /sec)
+propagations          : 1609           (inf /sec)
+conflict literals     : 592            (7.64 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0 s
+
+SATISFIABLE
+
+ file is 100.440.1055366826.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       101 |     440     1320 |     160     101      676     6.7 |  0.010 % |
+==============================================================================
+restarts              : 2
+conflicts             : 150            (37500 /sec)
+decisions             : 197            (49250 /sec)
+propagations          : 3294           (823500 /sec)
+conflict literals     : 990            (12.93 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.004 s
+
+SATISFIABLE
+
+ file is 100.440.281513920.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       100 |     440     1320 |     160     100      832     8.3 |  0.010 % |
+==============================================================================
+restarts              : 2
+conflicts             : 237            (59250 /sec)
+decisions             : 293            (73250 /sec)
+propagations          : 5295           (1323750 /sec)
+conflict literals     : 1678           (17.99 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.004 s
+
+SATISFIABLE
+
+ file is 100.440.313322538.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       102 |     440     1320 |     160     102      822     8.1 |  0.010 % |
+|       255 |     440     1320 |     176      91      603     6.6 |  0.010 % |
+|       480 |     431     1287 |     194     134      854     6.4 |  1.040 % |
+==============================================================================
+restarts              : 4
+conflicts             : 612            (153000 /sec)
+decisions             : 711            (177750 /sec)
+propagations          : 13688          (3422000 /sec)
+conflict literals     : 3889           (21.31 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.004 s
+
+UNSATISFIABLE
+
+ file is 100.440.718644139.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       100 |     440     1320 |     160     100      634     6.3 |  0.010 % |
+|       250 |     440     1302 |     176     119      680     5.7 |  2.031 % |
+==============================================================================
+restarts              : 3
+conflicts             : 268            (67000 /sec)
+decisions             : 325            (81250 /sec)
+propagations          : 6161           (1540250 /sec)
+conflict literals     : 1478           (22.01 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.004 s
+
+UNSATISFIABLE
+
+ file is 100.440.811207404.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       100 |     440     1320 |     160     100      691     6.9 |  0.010 % |
+|       250 |     442     1320 |     176      86      552     6.4 |  0.020 % |
+|       476 |     437     1302 |     194     158      987     6.2 |  1.020 % |
+==============================================================================
+restarts              : 4
+conflicts             : 588            (147000 /sec)
+decisions             : 700            (175000 /sec)
+propagations          : 14430          (3607500 /sec)
+conflict literals     : 3469           (26.21 % deleted)
+Memory used           : 1.68 MB
+CPU time              : 0.004 s
+
+UNSATISFIABLE
+
+ file is 100.440.1157971829.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       100 |     440     1320 |     160     100      704     7.0 |  0.010 % |
+|       250 |     433     1290 |     176     157      918     5.8 |  1.081 % |
+==============================================================================
+restarts              : 3
+conflicts             : 328            (82000 /sec)
+decisions             : 381            (95250 /sec)
+propagations          : 7511           (1877750 /sec)
+conflict literals     : 1784           (19.06 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.004 s
+
+UNSATISFIABLE
+
+ file is 100.440.1058678104.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       101 |     440     1320 |     160     101      698     6.9 |  0.011 % |
+|       251 |     429     1287 |     176      67      417     6.2 |  1.010 % |
+==============================================================================
+restarts              : 3
+conflicts             : 414            (103500 /sec)
+decisions             : 485            (121250 /sec)
+propagations          : 9822           (2455500 /sec)
+conflict literals     : 2306           (22.33 % deleted)
+Memory used           : 1.68 MB
+CPU time              : 0.004 s
+
+UNSATISFIABLE
+
+ file is 100.440.279437772.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       100 |     440     1320 |     160     100      700     7.0 |  0.010 % |
+|       250 |     441     1320 |     176     168     1041     6.2 |  0.020 % |
+|       475 |     417     1251 |     194      50      298     6.0 |  3.011 % |
+==============================================================================
+restarts              : 4
+conflicts             : 489            (122250 /sec)
+decisions             : 579            (144750 /sec)
+propagations          : 11514          (2878500 /sec)
+conflict literals     : 2831           (23.61 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.004 s
+
+UNSATISFIABLE
+
+ file is 100.440.822619456.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       100 |     440     1320 |     160     100      799     8.0 |  0.010 % |
+==============================================================================
+restarts              : 2
+conflicts             : 191            (inf /sec)
+decisions             : 242            (inf /sec)
+propagations          : 4620           (inf /sec)
+conflict literals     : 1429           (14.99 % deleted)
+Memory used           : 1.68 MB
+CPU time              : 0 s
+
+SATISFIABLE
+
+ file is 100.440.223352132.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       100 |     441     1320 |     160      99      625     6.3 |  0.011 % |
+|       250 |     435     1293 |     176      87      544     6.3 |  2.000 % |
+==============================================================================
+restarts              : 3
+conflicts             : 314            (78500 /sec)
+decisions             : 358            (89500 /sec)
+propagations          : 7162           (1790500 /sec)
+conflict literals     : 1713           (25.49 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.004 s
+
+UNSATISFIABLE
+
+ file is 100.440.1373334538.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       101 |     440     1320 |     160     101      698     6.9 |  0.010 % |
+|       252 |     441     1299 |     176     165     1013     6.1 |  4.000 % |
+==============================================================================
+restarts              : 3
+conflicts             : 262            (inf /sec)
+decisions             : 308            (inf /sec)
+propagations          : 5644           (inf /sec)
+conflict literals     : 1482           (18.71 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0 s
+
+UNSATISFIABLE
+
+ file is 100.440.309266109.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       101 |     440     1320 |     160     101      637     6.3 |  0.010 % |
+|       252 |     430     1290 |     176     105      634     6.0 |  1.010 % |
+==============================================================================
+restarts              : 3
+conflicts             : 366            (91500 /sec)
+decisions             : 439            (109750 /sec)
+propagations          : 8211           (2052750 /sec)
+conflict literals     : 1944           (20.72 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.004 s
+
+UNSATISFIABLE
+
+ file is 100.440.803893564.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       101 |     440     1320 |     160     101      791     7.8 |  0.010 % |
+|       251 |     430     1290 |     176      93      615     6.6 |  1.010 % |
+==============================================================================
+restarts              : 3
+conflicts             : 418            (52250 /sec)
+decisions             : 482            (60250 /sec)
+propagations          : 9580           (1197500 /sec)
+conflict literals     : 2355           (23.14 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.008 s
+
+UNSATISFIABLE
+
+ file is 100.440.307365877.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       100 |     441     1320 |     160      99      615     6.2 |  0.020 % |
+==============================================================================
+restarts              : 2
+conflicts             : 229            (inf /sec)
+decisions             : 265            (inf /sec)
+propagations          : 5054           (inf /sec)
+conflict literals     : 1237           (22.10 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0 s
+
+UNSATISFIABLE
+
+ file is 100.440.682901286.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       101 |     440     1320 |     160     101      730     7.2 |  0.010 % |
+|       254 |     437     1305 |     176     123      729     5.9 |  1.030 % |
+==============================================================================
+restarts              : 3
+conflicts             : 335            (83750 /sec)
+decisions             : 402            (100500 /sec)
+propagations          : 7595           (1898750 /sec)
+conflict literals     : 1852           (23.75 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.004 s
+
+UNSATISFIABLE
+
+ file is 100.440.1341570152.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       101 |     440     1320 |     160     101      738     7.3 |  0.010 % |
+|       253 |     431     1284 |     176      94      604     6.4 |  1.050 % |
+==============================================================================
+restarts              : 3
+conflicts             : 345            (86250 /sec)
+decisions             : 422            (105500 /sec)
+propagations          : 8140           (2035000 /sec)
+conflict literals     : 1978           (21.66 % deleted)
+Memory used           : 1.68 MB
+CPU time              : 0.004 s
+
+UNSATISFIABLE
+
+ file is 100.440.1083045173.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       102 |     443     1320 |     160      99      581     5.9 |  0.030 % |
+|       252 |     448     1320 |     176     162      920     5.7 |  0.080 % |
+==============================================================================
+restarts              : 3
+conflicts             : 337            (84250 /sec)
+decisions             : 441            (110250 /sec)
+propagations          : 8462           (2115500 /sec)
+conflict literals     : 1811           (27.70 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.004 s
+
+SATISFIABLE
+
+ file is 100.440.367330071.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       100 |     440     1320 |     160     100      636     6.4 |  0.011 % |
+|       250 |     413     1236 |     176      38      240     6.3 |  3.010 % |
+==============================================================================
+restarts              : 3
+conflicts             : 272            (68000 /sec)
+decisions             : 358            (89500 /sec)
+propagations          : 6738           (1684500 /sec)
+conflict literals     : 1449           (24.96 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.004 s
+
+UNSATISFIABLE
+
+ file is 100.440.263082781.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       101 |     441     1320 |     160     100      687     6.9 |  0.010 % |
+|       251 |     433     1296 |     176      73      403     5.5 |  1.010 % |
+==============================================================================
+restarts              : 3
+conflicts             : 330            (inf /sec)
+decisions             : 409            (inf /sec)
+propagations          : 7898           (inf /sec)
+conflict literals     : 1951           (21.46 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0 s
+
+SATISFIABLE
+
+ file is 100.440.323252473.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       101 |     441     1320 |     160     100      724     7.2 |  0.010 % |
+|       251 |     445     1320 |     176     166      931     5.6 |  0.051 % |
+|       477 |     424     1257 |     194     161      968     6.0 |  3.000 % |
+==============================================================================
+restarts              : 4
+conflicts             : 533            (66625 /sec)
+decisions             : 630            (78750 /sec)
+propagations          : 13566          (1695750 /sec)
+conflict literals     : 3010           (24.07 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.008 s
+
+UNSATISFIABLE
+
+ file is 100.440.696662980.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       101 |     440     1320 |     160     101      757     7.5 |  0.010 % |
+|       252 |     438     1302 |     176     117      681     5.8 |  2.000 % |
+==============================================================================
+restarts              : 3
+conflicts             : 329            (82250 /sec)
+decisions             : 390            (97500 /sec)
+propagations          : 7951           (1987750 /sec)
+conflict literals     : 1831           (20.94 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.004 s
+
+UNSATISFIABLE
+
+ file is 100.440.276826985.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       102 |     440     1320 |     160     102      760     7.5 |  0.010 % |
+|       252 |     442     1320 |     176     169     1063     6.3 |  0.040 % |
+==============================================================================
+restarts              : 3
+conflicts             : 381            (47625 /sec)
+decisions             : 452            (56500 /sec)
+propagations          : 8654           (1081750 /sec)
+conflict literals     : 2278           (22.57 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.008 s
+
+UNSATISFIABLE
+
+ file is 100.440.511157684.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       101 |     440     1320 |     160     101      748     7.4 |  0.010 % |
+==============================================================================
+restarts              : 2
+conflicts             : 148            (37000 /sec)
+decisions             : 199            (49750 /sec)
+propagations          : 3122           (780500 /sec)
+conflict literals     : 1033           (13.41 % deleted)
+Memory used           : 1.68 MB
+CPU time              : 0.004 s
+
+SATISFIABLE
+
+ file is 100.440.295658976.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       102 |     440     1320 |     160     102      715     7.0 |  0.010 % |
+|       253 |     429     1287 |     176      95      603     6.3 |  1.010 % |
+==============================================================================
+restarts              : 3
+conflicts             : 432            (108000 /sec)
+decisions             : 547            (136750 /sec)
+propagations          : 10950          (2737500 /sec)
+conflict literals     : 2542           (23.73 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.004 s
+
+SATISFIABLE
+
+ file is 100.440.399054951.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       100 |     440     1320 |     160     100      633     6.3 |  0.010 % |
+|       251 |     428     1284 |     176      55      334     6.1 |  1.020 % |
+==============================================================================
+restarts              : 3
+conflicts             : 460            (115000 /sec)
+decisions             : 528            (132000 /sec)
+propagations          : 10244          (2561000 /sec)
+conflict literals     : 2345           (27.76 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.004 s
+
+UNSATISFIABLE
+
+ file is 100.440.911795405.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       100 |     440     1320 |     160     100      620     6.2 |  0.011 % |
+|       250 |     440     1290 |     176     101      589     5.8 |  4.090 % |
+==============================================================================
+restarts              : 3
+conflicts             : 259            (inf /sec)
+decisions             : 297            (inf /sec)
+propagations          : 5703           (inf /sec)
+conflict literals     : 1364           (23.67 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0 s
+
+UNSATISFIABLE
+
+ file is 100.440.814030407.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       101 |     440     1320 |     160     101      780     7.7 |  0.010 % |
+|       251 |     441     1320 |     176     169     1115     6.6 |  0.020 % |
+|       476 |     433     1296 |     194      59      329     5.6 |  1.020 % |
+==============================================================================
+restarts              : 4
+conflicts             : 705            (88125 /sec)
+decisions             : 833            (104125 /sec)
+propagations          : 15610          (1951250 /sec)
+conflict literals     : 4213           (21.25 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.008 s
+
+UNSATISFIABLE
+
+ file is 100.440.892511122.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       101 |     441     1320 |     160     100      705     7.0 |  0.010 % |
+==============================================================================
+restarts              : 2
+conflicts             : 209            (inf /sec)
+decisions             : 282            (inf /sec)
+propagations          : 5198           (inf /sec)
+conflict literals     : 1326           (19.49 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0 s
+
+SATISFIABLE
+
+ file is 100.440.322562276.cnf  
+ 
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |     440     1320 |     146       0        0     nan |  0.000 % |
+|       101 |     440     1320 |     160     101      785     7.8 |  0.010 % |
+|       252 |     444     1320 |     176     164      936     5.7 |  0.050 % |
+==============================================================================
+restarts              : 3
+conflicts             : 368            (92000 /sec)
+decisions             : 424            (106000 /sec)
+propagations          : 7839           (1959750 /sec)
+conflict literals     : 2122           (21.12 % deleted)
+Memory used           : 1.67 MB
+CPU time              : 0.004 s
+
+UNSATISFIABLE

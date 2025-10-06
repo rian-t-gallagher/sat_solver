@@ -1,0 +1,5 @@
+This folder contains the following files.
+
+(1)100.r.seed.cnf: 3-CNF formulas with 100 variables and r clauses in dimacs format.  
+(2)100.r.seed.rcnf: 3-CNF formulas with 100 variables and r clauses.  
+(3)op.r:  results produced by the Minisat SAT solver on these 3-cnf formulas with 100 variables and r clauses in them
