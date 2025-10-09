@@ -40,12 +40,12 @@ def validate_cnf_file(filepath: str) -> bool:
         
         # Check validation
         is_valid = formula.validate()
-        print(f"  Validation: {'✓ PASS' if is_valid else '✗ FAIL'}")
+        print(f"  Validation: {'PASS' if is_valid else 'FAIL'}")
         
         # Check 3-SAT constraint
         clause_lengths = [len(clause) for clause in formula.clauses]
         is_3sat = all(length == 3 for length in clause_lengths)
-        print(f"  3-SAT format: {'✓ YES' if is_3sat else '✗ NO'}")
+        print(f"  3-SAT format: {'YES' if is_3sat else 'NO'}")
         
         if not is_3sat:
             unique_lengths = sorted(set(clause_lengths))

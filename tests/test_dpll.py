@@ -14,7 +14,7 @@ class TestDPLLSolver:
     
     def test_simple_satisfiable_formula(self):
         """Test DPLL on a simple satisfiable formula."""
-        # Formula: (x1 ∨ x2) ∧ (¬x1 ∨ x2) ∧ (x1 ∨ ¬x2)
+        # Formula: (x1 OR x2) AND (NOT x1 OR x2) AND (x1 OR NOT x2)
         # Should be satisfiable with x1=True, x2=True
         clauses = [[1, 2], [-1, 2], [1, -2]]
         formula = CNFFormula(2, 3, clauses)
@@ -34,7 +34,7 @@ class TestDPLLSolver:
         
     def test_simple_unsatisfiable_formula(self):
         """Test DPLL on a simple unsatisfiable formula."""
-        # Formula: (x1) ∧ (¬x1)
+        # Formula: (x1) AND (NOT x1)
         # Should be unsatisfiable
         clauses = [[1], [-1]]
         formula = CNFFormula(1, 2, clauses)
@@ -48,7 +48,7 @@ class TestDPLLSolver:
         
     def test_unit_propagation(self):
         """Test that unit propagation works correctly."""
-        # Formula: (x1) ∧ (¬x1 ∨ x2) ∧ (¬x2 ∨ x3)
+        # Formula: (x1) AND (NOT x1 OR x2) AND (NOT x2 OR x3)
         # Should force x1=True, x2=True, x3=True through unit propagation
         clauses = [[1], [-1, 2], [-2, 3]]
         formula = CNFFormula(3, 3, clauses)
@@ -67,7 +67,7 @@ class TestDPLLSolver:
         
     def test_pure_literal_elimination(self):
         """Test pure literal elimination."""
-        # Formula: (x1 ∨ x2) ∧ (x1 ∨ x3) ∧ (x2 ∨ x3)
+        # Formula: (x1 OR x2) AND (x1 OR x3) AND (x2 OR x3)
         # x1, x2, x3 all appear only positive (pure literals)
         clauses = [[1, 2], [1, 3], [2, 3]]
         formula = CNFFormula(3, 3, clauses)

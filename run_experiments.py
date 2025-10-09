@@ -93,9 +93,8 @@ class ExperimentHarness:
         Returns:
             List of experiment result dictionaries
         """
-        print(f"\\n=== Experiment: {formula_filepath} ===")
         
-        # Parse the CNF formula
+        print(f"\n=== Experiment: {formula_filepath} ===")        # Parse the CNF formula
         try:
             if formula_filepath.endswith('.rcnf'):
                 parsed_formula = parse_raw_cnf(formula_filepath)
@@ -367,7 +366,7 @@ class ExperimentHarness:
         
         # Display summary for each algorithm
         for algorithm_name, algorithm_trials in algorithm_results.items():
-            print(f"\\n{algorithm_name.upper()} Algorithm Summary:")
+            print(f"\n{algorithm_name.upper()} Algorithm Summary:")
             print(f"  Total Trials: {len(algorithm_trials)}")
             
             # Calculate satisfaction rate

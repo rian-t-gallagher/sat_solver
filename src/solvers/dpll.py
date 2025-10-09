@@ -188,7 +188,7 @@ class DPLLSolver:
         self.stats["decisions"] += 1
         
         # Russell & Norvig: Try both truth values
-        # "return DPLL-SATISFIABLE?(clauses, symbols - P, model ∪ {P = true})"
+        # "return DPLL-SATISFIABLE?(clauses, symbols - P, model union {P = true})"
         remaining_symbols_after_choice = remaining_symbols - {chosen_branching_variable}
         
         # Try chosen_branching_variable = true
@@ -200,7 +200,7 @@ class DPLLSolver:
             current_model.update(model_with_true_assignment)
             return True
             
-        # Russell & Norvig: "or DPLL-SATISFIABLE?(clauses, symbols - P, model ∪ {P = false})"
+        # Russell & Norvig: "or DPLL-SATISFIABLE?(clauses, symbols - P, model union {P = false})"
         self.stats["backtracks"] += 1
         
         # Try chosen_branching_variable = false  

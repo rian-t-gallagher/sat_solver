@@ -13,7 +13,7 @@ class TestWalkSATSolver:
     
     def test_walksat_simple_satisfiable_formula(self):
         """Test WalkSAT on a simple satisfiable formula."""
-        # Formula: (x1 ∨ x2) ∧ (¬x1 ∨ x2) ∧ (x1 ∨ ¬x2)
+        # Formula: (x1 OR x2) AND (NOT x1 OR x2) AND (x1 OR NOT x2)
         # Should be satisfiable with x1=True, x2=True
         clauses = [[1, 2], [-1, 2], [1, -2]]
         formula = CNFFormula(2, 3, clauses)
@@ -104,7 +104,7 @@ class TestGeneticSATSolver:
     
     def test_genetic_simple_satisfiable_formula(self):
         """Test Genetic Algorithm on a simple satisfiable formula."""
-        # Formula: (x1 ∨ x2) ∧ (¬x1 ∨ x2) ∧ (x1 ∨ ¬x2)
+        # Formula: (x1 OR x2) AND (NOT x1 OR x2) AND (x1 OR NOT x2)
         clauses = [[1, 2], [-1, 2], [1, -2]]
         formula = CNFFormula(2, 3, clauses)
         
@@ -264,7 +264,7 @@ class TestHeuristicSolversOnRealFiles:
         assert genetic_result in [SATResult.SATISFIABLE, SATResult.UNKNOWN]
         
         # Print comparison results
-        print(f"\\nSolver Comparison on {filepath}:")
+        print(f"\nSolver Comparison on {filepath}:")
         print(f"WalkSAT: {walksat_result.value}, Time: {walksat_stats['solving_time']:.3f}s")
         print(f"Genetic: {genetic_result.value}, Time: {genetic_stats['evolution_time']:.3f}s")
         

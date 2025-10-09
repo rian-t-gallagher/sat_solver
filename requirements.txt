@@ -1,4 +1,6 @@
 numpy
 matplotlib
+pandas
+seaborn
 pytest
 tqdm
