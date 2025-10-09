@@ -1,39 +1,35 @@
-"""
-Test suite for CNF parser functionality.
-Phase 1 will implement DIMACS parser with these test cases.
-"""
-import pytest
-import os
+"""Test suite for CNF parser functionality."""
 
-def test_placeholder():
-    """Placeholder test to verify pytest setup works."""
-    assert True
+import pytest
+import tempfile
+import os
+from src.cnf_parser import parse_dimacs, parse_raw_cnf, CNFFormula
+
+
+class TestCNFFormula:
+    """Test CNFFormula class functionality."""
+    
+    def test_cnf_formula_creation(self):
+        """Test creating a CNF formula."""
+        clauses = [[1, 2, 3], [-1, -2], [2, -3, 1]]
+        formula = CNFFormula(3, 3, clauses)
+        
+        assert formula.num_vars == 3
+        assert formula.num_clauses == 3
+        assert formula.clauses == clauses
+
 
 def test_project_structure():
-    """Verify basic project structure exists."""
-    
-    # Check key directories exist
+    """Test that required project structure exists."""
+    # Check core directories
     assert os.path.exists("src")
-    assert os.path.exists("src/parser")
+    assert os.path.exists("src/cnf_parser")
     assert os.path.exists("src/solvers")
-    assert os.path.exists("benchmarks")
     assert os.path.exists("tests")
+    assert os.path.exists("benchmarks")
     assert os.path.exists("results")
     
-    # Check key files exist
-    assert os.path.exists("run_solver.py")
+    # Check core files
+    assert os.path.exists("README.md")
     assert os.path.exists("requirements.txt")
-    assert os.path.exists("roadmap.txt")
-
-# TODO: Phase 1 - Add DIMACS parser tests
-# def test_parse_dimacs_header():
-#     """Test parsing of 'p cnf vars clauses' header."""
-#     pass
-
-# def test_parse_dimacs_clauses():
-#     """Test parsing of clause lines with literals."""
-#     pass
-
-# def test_parse_comments():
-#     """Test parsing of comment lines starting with 'c'."""
-#     pass
+    assert os.path.exists("run_solver.py")
