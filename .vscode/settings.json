@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": ["./src"],
+    "python.defaultInterpreterPath": "python3",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "basic"
+}

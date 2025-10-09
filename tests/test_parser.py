@@ -1,4 +1,4 @@
-"""Test suite for CNF parser functionality."""
+# test_parser.py
 
 import pytest
 import tempfile

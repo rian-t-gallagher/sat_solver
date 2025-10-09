@@ -4,7 +4,7 @@ Command-line tool for validating CNF files.
 
 Usage:
     python validate_cnf.py <file.cnf>
-    python validate_cnf.py benchmarks/CNF\ Formulas/uf20-0156.cnf
+    python validate_cnf.py "benchmarks/CNF Formulas/uf20-0156.cnf"
 """
 
 import sys
@@ -14,7 +14,12 @@ from pathlib import Path
 # Add src to path for imports
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 
-from cnf_parser import parse_dimacs, parse_raw_cnf
+try:
+    from cnf_parser import parse_dimacs, parse_raw_cnf
+except ImportError as e:
+    print(f"Import error: {e}")
+    print("Make sure you're running from the project root directory")
+    sys.exit(1)
 
 
 def validate_cnf_file(filepath: str) -> bool:
@@ -59,22 +64,15 @@ def validate_cnf_file(filepath: str) -> bool:
         print(f"  Error: {e}")
         return False
 
-
-def main():
-    """Main validation function."""
-    if len(sys.argv) != 2:
-        print("Usage: python validate_cnf.py <file.cnf>")
-        sys.exit(1)
-        
-    filepath = sys.argv[1]
+if len(sys.argv) != 2:
+    print("Usage: python validate_cnf.py <file.cnf>")
+    sys.exit(1)
     
-    if not os.path.exists(filepath):
-        print(f"Error: File not found: {filepath}")
-        sys.exit(1)
-        
-    success = validate_cnf_file(filepath)
-    sys.exit(0 if success else 1)
+filepath = sys.argv[1]
 
-
-if __name__ == "__main__":
-    main()
+if not os.path.exists(filepath):
+    print(f"Error: File not found: {filepath}")
+    sys.exit(1)
+    
+success = validate_cnf_file(filepath)
+sys.exit(0 if success else 1)

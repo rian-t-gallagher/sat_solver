@@ -31,9 +31,9 @@ Phase 5 — Parameter Sweep & Tuning
     Save tuned parameter defaults
 
 Phase 6 — Data Analysis & Plotting
-Generate plots of solver performance and time
-Create tables comparing average and best results
-Save outputs as PNG/SVG in results/plots/
+    Generate plots of solver performance and time
+    Create tables comparing average and best results
+    Save outputs as PNG/SVG in results/plots/
 
 Phase 7 — Report & Submission
     Compile report.pdf with method summaries and results
