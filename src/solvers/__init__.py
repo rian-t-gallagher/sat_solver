@@ -7,5 +7,7 @@ including complete algorithms (DPLL, Resolution) and heuristic algorithms
 """
 
 from .dpll import DPLLSolver, SATResult
+from .walksat import WalkSATSolver
+from .genetic import GeneticSATSolver
 
-__all__ = ['DPLLSolver', 'SATResult']
+__all__ = ['DPLLSolver', 'WalkSATSolver', 'GeneticSATSolver', 'SATResult']

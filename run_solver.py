@@ -14,7 +14,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 
 from cnf_parser import parse_dimacs, parse_raw_cnf
-from solvers import DPLLSolver, SATResult
+from solvers import DPLLSolver, WalkSATSolver, GeneticSATSolver, SATResult
 
 
 def parse_cnf_file(cnf_file_path: str):
@@ -100,7 +100,7 @@ parser.add_argument(
 # Parse the command line arguments
 command_line_args = parser.parse_args()
 
-print(f"SAT Solver - Phase 2: DPLL Implementation")
+print(f"SAT Solver - Phase 3: Heuristic Algorithm Implementation")
 print(f"Selected Solver Algorithm: {command_line_args.solver}")
 print(f"Input CNF File: {command_line_args.input}")
 if command_line_args.output:
@@ -115,24 +115,66 @@ parsed_cnf_formula = parse_cnf_file(command_line_args.input)
 if command_line_args.validate_only:
 	print("CNF file validation completed successfully.")
 	sys.exit(0)
+
+# Initialize solver statistics dictionary for all algorithms
+solving_result = None
+satisfying_assignment = None
+solver_statistics = {}
+
+# Phase 3: Implement different SAT solving algorithms
+print(f"\n=== Phase 3: Heuristic SAT Solver Implementation ===")
+print(f"Selected Algorithm: {command_line_args.solver}")
+
+if command_line_args.solver == 'dpll':
+    # Russell & Norvig Chapter 7: Complete DPLL algorithm
+    print(f"Textbook Reference: Chapter 7, Section 7.5.2, Figure 7.17")
+    print(f"Algorithm Type: Complete (can prove UNSAT)")
     
-# Russell & Norvig Chapter 7: Implement DPLL solving algorithm
-print(f"\n=== Russell & Norvig DPLL Solver Implementation ===")
-print(f"Textbook Reference: Chapter 7, Section 7.5.2, Figure 7.17")
-print(f"Selected Heuristic Strategy: {command_line_args.solver}")
-
-# Map CLI solver names to DPLL variable selection heuristics
-solver_name_to_heuristic_mapping = {
-    'dpll': 'first_available',
-    'walksat': 'most_constrained',  # Will be replaced with actual WalkSAT in Phase 3
-    'genetic': 'least_constraining'  # Will be replaced with actual GA in Phase 3
-}
-
-chosen_variable_selection_heuristic = solver_name_to_heuristic_mapping.get(command_line_args.solver, 'first_available')
-dpll_solver_instance = DPLLSolver(heuristic=chosen_variable_selection_heuristic)
-
-# Solve the CNF formula using DPLL algorithm
-solving_result, satisfying_assignment, solver_statistics = dpll_solver_instance.solve(parsed_cnf_formula)
+    # Map CLI solver names to DPLL variable selection heuristics
+    dpll_heuristic_mapping = {
+        'dpll': 'first_available'
+    }
+    
+    chosen_dpll_heuristic = dpll_heuristic_mapping.get(command_line_args.solver, 'first_available')
+    dpll_solver_instance = DPLLSolver(heuristic=chosen_dpll_heuristic)
+    
+    # Solve using DPLL algorithm
+    solving_result, satisfying_assignment, solver_statistics = dpll_solver_instance.solve(parsed_cnf_formula)
+    
+elif command_line_args.solver == 'walksat':
+    # WalkSAT: Local search with random walk
+    print(f"Algorithm Reference: Selman, Kautz & Cohen (1994)")
+    print(f"Algorithm Type: Heuristic (cannot prove UNSAT)")
+    
+    walksat_solver_instance = WalkSATSolver(
+        max_flips_per_try=1000,
+        max_restart_attempts=10,
+        random_walk_probability=0.5,
+        random_seed=command_line_args.seed
+    )
+    
+    # Solve using WalkSAT algorithm
+    solving_result, satisfying_assignment, solver_statistics = walksat_solver_instance.solve(parsed_cnf_formula)
+    
+elif command_line_args.solver == 'genetic':
+    # Genetic Algorithm: Evolutionary approach
+    print(f"Algorithm Reference: Mitchell (1996) - Genetic Algorithms")
+    print(f"Algorithm Type: Heuristic (cannot prove UNSAT)")
+    
+    genetic_solver_instance = GeneticSATSolver(
+        population_size=100,
+        max_generations=500,
+        crossover_probability=0.8,
+        mutation_probability=0.1,
+        random_seed=command_line_args.seed
+    )
+    
+    # Solve using Genetic Algorithm
+    solving_result, satisfying_assignment, solver_statistics = genetic_solver_instance.solve(parsed_cnf_formula)
+    
+else:
+    print(f"ERROR: Unsupported solver algorithm: {command_line_args.solver}")
+    sys.exit(1)
 
 print(f"\nSolver Result: {solving_result.value}")
 if solving_result == SATResult.SATISFIABLE and satisfying_assignment is not None:
@@ -160,16 +202,42 @@ else:
             unsatisfiable_output_file.write("s UNSATISFIABLE\n")
         print(f"Unsatisfiable result written to {command_line_args.output}")
 
-print(f"\nDPLL Solver Performance Statistics:")
-print(f"  Total Decisions Made: {solver_statistics['decisions']}")
-print(f"  Unit Propagations: {solver_statistics['propagations']}")
-print(f"  Conflicts Encountered: {solver_statistics['conflicts']}")  
-print(f"  Backtrack Operations: {solver_statistics['backtracks']}")
-print(f"  Total Solving Time: {solver_statistics['time']:.4f} seconds")
+print(f"\nAlgorithm Performance Statistics:")
+
+if command_line_args.solver == 'dpll':
+    print(f"  Total Decisions Made: {solver_statistics['decisions']}")
+    print(f"  Unit Propagations: {solver_statistics['propagations']}")
+    print(f"  Conflicts Encountered: {solver_statistics['conflicts']}")  
+    print(f"  Backtrack Operations: {solver_statistics['backtracks']}")
+    print(f"  Total Solving Time: {solver_statistics['time']:.4f} seconds")
+    
+elif command_line_args.solver == 'walksat':
+    print(f"  Total Variable Flips: {solver_statistics['total_flips']}")
+    print(f"  Restart Attempts: {solver_statistics['restart_attempts']}")
+    print(f"  Random Walk Flips: {solver_statistics['random_flips']}")
+    print(f"  Greedy Flips: {solver_statistics['greedy_flips']}")
+    print(f"  Best Fitness Score: {solver_statistics['best_satisfied_clauses']}/{parsed_cnf_formula.num_clauses}")
+    print(f"  Total Solving Time: {solver_statistics['solving_time']:.4f} seconds")
+    
+elif command_line_args.solver == 'genetic':
+    print(f"  Generations Evolved: {solver_statistics['generations_evolved']}")
+    print(f"  Fitness Evaluations: {solver_statistics['fitness_evaluations']}")
+    print(f"  Crossover Operations: {solver_statistics['crossover_operations']}")
+    print(f"  Mutation Operations: {solver_statistics['mutation_operations']}")
+    print(f"  Best Fitness Score: {solver_statistics['best_fitness_achieved']}/{parsed_cnf_formula.num_clauses}")
+    print(f"  Final Population Avg: {solver_statistics['final_population_fitness']:.2f}")
+    print(f"  Total Evolution Time: {solver_statistics['evolution_time']:.4f} seconds")
 
 # Verify the solution correctness if formula was satisfiable
 if solving_result == SATResult.SATISFIABLE and satisfying_assignment is not None:
-    solution_is_verified = dpll_solver_instance.verify_solution(parsed_cnf_formula, satisfying_assignment)
+    # Choose appropriate verification method based on solver
+    if command_line_args.solver == 'dpll':
+        solution_is_verified = dpll_solver_instance.verify_solution(parsed_cnf_formula, satisfying_assignment)
+    elif command_line_args.solver == 'walksat':
+        solution_is_verified = walksat_solver_instance.verify_solution(parsed_cnf_formula, satisfying_assignment)
+    elif command_line_args.solver == 'genetic':
+        solution_is_verified = genetic_solver_instance.verify_solution(parsed_cnf_formula, satisfying_assignment)
+    
     print(f"  Solution Verification: {solution_is_verified}")
     if not solution_is_verified:
         print("  WARNING: Solution verification failed - this indicates a bug!")
